@@ -64,6 +64,10 @@ function setData(){
 
 }
 function getData(word){
+    if(word.toLowerCase() === 'julie') {
+        infoField.innerText = "Best girl"
+        return
+    }
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
     let data = fetch(url)
         .then(res => res.json())
@@ -75,9 +79,7 @@ function search(){
     if(word){
         searchField.setAttribute("placeholder", 'Search')
         infoField.innerText = `Hold on, searching for meaning of ${word}...`
-        setTimeout(()=>{
-            getData(word)
-        }, 1000)
+        getData(word)
     }
     else searchField.setAttribute("placeholder", 'You have to type something :)')
 }
