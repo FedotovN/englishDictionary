@@ -84,7 +84,6 @@ function search(){
 window.onload = () => {
     searchField.focus()
     window.addEventListener(('keyup'), (e)=>{
-
         if(e.key === 'Enter'){
             search()
         }
@@ -96,5 +95,5 @@ window.onload = () => {
     searchBtn.addEventListener(('click'), ()=>{
         search()
     })
-    searchField.addEventListener(('input'), ()=>{ if(!searchField.value){ showInfo(false, "Type some word to get it's meaning, pronounciation, synonyms e.t.c") }})
+    searchField.addEventListener(('input'), ()=>{ if(!searchField.value){ showInfo(false, "Type some word to get it's meaning, pronounciation, and") }})
 }
