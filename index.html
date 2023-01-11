@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Dictionary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="header main_header">
+                <h2>English Dictionary</h2>
+            </div>
+            <div class="search_bar">
+                <i class="fa-solid fa-xmark" id="deleteBtn"></i>
+                <input type="text" placeholder="Search" id="searchField">
+                <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+            </div>
+            <p class="info" id="infoField">Type some word to get it's meaning, pronunciation, and synonyms</p>
+            <div class="content disabled" id="content">
+                <div class="content_word">
+                    <div class="word">
+                        <p id="wordField">Fun</p> <span id="partOfSpeech">Noun</span>
+                        <span id="pronounce">\f^n\</span>
+                    </div>
+                    <div class="audio">
+                        <i class="fa-solid fa-volume-high" id = "audioBtn"></i>
+                    </div>
+                </div>
+                <ul class="content_info">
+                    <li class="meaning">
+                        <h4>Meaning</h4>
+                        <ul id="meaning">
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li class="examples">
+                        <h4>Example</h4>
+                        <ul id="examples">
+                            <span></span>
+                        </ul>
+                    </li>
+                    <li class="synonyms">
+                        <h4>Synonyms</h4>
+                        <ul id = 'synonymous'></ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
